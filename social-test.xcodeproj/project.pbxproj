@@ -13,6 +13,11 @@
 		3E0EA5D01DF2455D0093F0CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E0EA5CF1DF2455D0093F0CF /* Assets.xcassets */; };
 		3E0EA5D31DF2455D0093F0CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E0EA5D11DF2455D0093F0CF /* LaunchScreen.storyboard */; };
 		3E0EA5DB1DF245F00093F0CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E0EA5DA1DF245F00093F0CF /* GoogleService-Info.plist */; };
+		3E0EA5E01DF290B80093F0CF /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0EA5DF1DF290B80093F0CF /* FancyView.swift */; };
+		3E0EA5E31DF291FD0093F0CF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0EA5E21DF291FD0093F0CF /* Constants.swift */; };
+		3E0EA5E51DF293DD0093F0CF /* RoundButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0EA5E41DF293DD0093F0CF /* RoundButtons.swift */; };
+		3E0EA5E71DF296360093F0CF /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0EA5E61DF296360093F0CF /* FancyField.swift */; };
+		3E0EA5E91DF297960093F0CF /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0EA5E81DF297960093F0CF /* FancyButton.swift */; };
 		B02B44FA4312DB242BFF59CD /* Pods_social_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C575BE8573347D0A264FC3F3 /* Pods_social_test.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +30,11 @@
 		3E0EA5D21DF2455D0093F0CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E0EA5D41DF2455D0093F0CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E0EA5DA1DF245F00093F0CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3E0EA5DF1DF290B80093F0CF /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		3E0EA5E21DF291FD0093F0CF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3E0EA5E41DF293DD0093F0CF /* RoundButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButtons.swift; sourceTree = "<group>"; };
+		3E0EA5E61DF296360093F0CF /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
+		3E0EA5E81DF297960093F0CF /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 		45C6D781B016FADE0BB6C194 /* Pods-social-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-social-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-social-test/Pods-social-test.debug.xcconfig"; sourceTree = "<group>"; };
 		8112B2A925136AD3C7C89DC1 /* Pods-social-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-social-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-social-test/Pods-social-test.release.xcconfig"; sourceTree = "<group>"; };
 		C575BE8573347D0A264FC3F3 /* Pods_social_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_social_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +73,7 @@
 		3E0EA5C71DF2455D0093F0CF /* social-test */ = {
 			isa = PBXGroup;
 			children = (
+				3E0EA5E11DF291D00093F0CF /* Utilities */,
 				3E0EA5DE1DF246F70093F0CF /* View */,
 				3E0EA5DD1DF246E50093F0CF /* Controller */,
 				3E0EA5DC1DF246DB0093F0CF /* model */,
@@ -94,8 +105,20 @@
 		3E0EA5DE1DF246F70093F0CF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3E0EA5DF1DF290B80093F0CF /* FancyView.swift */,
+				3E0EA5E41DF293DD0093F0CF /* RoundButtons.swift */,
+				3E0EA5E61DF296360093F0CF /* FancyField.swift */,
+				3E0EA5E81DF297960093F0CF /* FancyButton.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		3E0EA5E11DF291D00093F0CF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3E0EA5E21DF291FD0093F0CF /* Constants.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 		A26C2582025E305748B37942 /* Pods */ = {
@@ -240,8 +263,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E0EA5E71DF296360093F0CF /* FancyField.swift in Sources */,
 				3E0EA5CB1DF2455D0093F0CF /* SignInVC.swift in Sources */,
 				3E0EA5C91DF2455D0093F0CF /* AppDelegate.swift in Sources */,
+				3E0EA5E91DF297960093F0CF /* FancyButton.swift in Sources */,
+				3E0EA5E01DF290B80093F0CF /* FancyView.swift in Sources */,
+				3E0EA5E51DF293DD0093F0CF /* RoundButtons.swift in Sources */,
+				3E0EA5E31DF291FD0093F0CF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
