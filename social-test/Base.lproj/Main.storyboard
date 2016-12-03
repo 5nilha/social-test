@@ -78,7 +78,7 @@
                                 <rect key="frame" x="46" y="454" width="283" height="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZP9-5R-qIT" customClass="FancyButton" customModule="social_test" customModuleProvider="target">
                                 <rect key="frame" x="46" y="493" width="283" height="37"/>
@@ -87,6 +87,9 @@
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" red="0.99990183115005493" green="1" blue="0.99987989664077759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="signInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C38-eU-4pz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBJ-tD-31j" customClass="RoundButtons" customModule="social_test" customModuleProvider="target">
                                 <rect key="frame" x="117" y="227" width="140" height="140"/>
@@ -126,6 +129,10 @@
                             <constraint firstItem="ZP9-5R-qIT" firstAttribute="top" secondItem="euo-Em-clq" secondAttribute="bottom" constant="14" id="yYu-Hg-u74"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="WEV-kT-sZT" id="l4n-ms-ezG"/>
+                        <outlet property="passwordField" destination="euo-Em-clq" id="XtC-bZ-Hst"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
