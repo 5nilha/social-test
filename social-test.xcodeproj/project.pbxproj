@@ -18,6 +18,7 @@
 		3E0EA5E51DF293DD0093F0CF /* RoundButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0EA5E41DF293DD0093F0CF /* RoundButtons.swift */; };
 		3E0EA5E71DF296360093F0CF /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0EA5E61DF296360093F0CF /* FancyField.swift */; };
 		3E0EA5E91DF297960093F0CF /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0EA5E81DF297960093F0CF /* FancyButton.swift */; };
+		3E0EA5EC1DF2A7B00093F0CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0EA5EB1DF2A7B00093F0CF /* AppDelegate.m */; };
 		B02B44FA4312DB242BFF59CD /* Pods_social_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C575BE8573347D0A264FC3F3 /* Pods_social_test.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,9 @@
 		3E0EA5E41DF293DD0093F0CF /* RoundButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButtons.swift; sourceTree = "<group>"; };
 		3E0EA5E61DF296360093F0CF /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		3E0EA5E81DF297960093F0CF /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
+		3E0EA5EA1DF2A7B00093F0CF /* social-test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "social-test-Bridging-Header.h"; sourceTree = "<group>"; };
+		3E0EA5EB1DF2A7B00093F0CF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3E0EA5ED1DF2B1BC0093F0CF /* social-test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "social-test.entitlements"; sourceTree = "<group>"; };
 		45C6D781B016FADE0BB6C194 /* Pods-social-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-social-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-social-test/Pods-social-test.debug.xcconfig"; sourceTree = "<group>"; };
 		8112B2A925136AD3C7C89DC1 /* Pods-social-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-social-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-social-test/Pods-social-test.release.xcconfig"; sourceTree = "<group>"; };
 		C575BE8573347D0A264FC3F3 /* Pods_social_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_social_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,16 +77,19 @@
 		3E0EA5C71DF2455D0093F0CF /* social-test */ = {
 			isa = PBXGroup;
 			children = (
+				3E0EA5ED1DF2B1BC0093F0CF /* social-test.entitlements */,
 				3E0EA5E11DF291D00093F0CF /* Utilities */,
 				3E0EA5DE1DF246F70093F0CF /* View */,
 				3E0EA5DD1DF246E50093F0CF /* Controller */,
 				3E0EA5DC1DF246DB0093F0CF /* model */,
 				3E0EA5C81DF2455D0093F0CF /* AppDelegate.swift */,
+				3E0EA5EB1DF2A7B00093F0CF /* AppDelegate.m */,
 				3E0EA5CC1DF2455D0093F0CF /* Main.storyboard */,
 				3E0EA5CF1DF2455D0093F0CF /* Assets.xcassets */,
 				3E0EA5D11DF2455D0093F0CF /* LaunchScreen.storyboard */,
 				3E0EA5DA1DF245F00093F0CF /* GoogleService-Info.plist */,
 				3E0EA5D41DF2455D0093F0CF /* Info.plist */,
+				3E0EA5EA1DF2A7B00093F0CF /* social-test-Bridging-Header.h */,
 			);
 			path = "social-test";
 			sourceTree = "<group>";
@@ -174,7 +181,13 @@
 					3E0EA5C41DF2455D0093F0CF = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = RAQ8F4J76H;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -267,6 +280,7 @@
 				3E0EA5CB1DF2455D0093F0CF /* SignInVC.swift in Sources */,
 				3E0EA5C91DF2455D0093F0CF /* AppDelegate.swift in Sources */,
 				3E0EA5E91DF297960093F0CF /* FancyButton.swift in Sources */,
+				3E0EA5EC1DF2A7B00093F0CF /* AppDelegate.m in Sources */,
 				3E0EA5E01DF290B80093F0CF /* FancyView.swift in Sources */,
 				3E0EA5E51DF293DD0093F0CF /* RoundButtons.swift in Sources */,
 				3E0EA5E31DF291FD0093F0CF /* Constants.swift in Sources */,
@@ -391,11 +405,15 @@
 			baseConfigurationReference = 45C6D781B016FADE0BB6C194 /* Pods-social-test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "social-test/social-test.entitlements";
 				DEVELOPMENT_TEAM = RAQ8F4J76H;
 				INFOPLIST_FILE = "social-test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bwtdirectgroup.social-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "social-test/social-test-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -405,11 +423,14 @@
 			baseConfigurationReference = 8112B2A925136AD3C7C89DC1 /* Pods-social-test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "social-test/social-test.entitlements";
 				DEVELOPMENT_TEAM = RAQ8F4J76H;
 				INFOPLIST_FILE = "social-test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bwtdirectgroup.social-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "social-test/social-test-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
