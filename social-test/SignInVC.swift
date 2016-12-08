@@ -60,7 +60,7 @@ class SignInVC: UIViewController {
     }
     
     
-    //Firebase code
+    //Firebase code to authenticate Facebook
     func firebaseAuth(_ credential: FIRAuthCredential) {
         FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
             if error != nil {
@@ -68,7 +68,8 @@ class SignInVC: UIViewController {
             } else {
             print("Developer: Successfully authenticated with Firebase")
                 if let user = user {
-                   self.completeSigIn(id: user.uid)
+                    let userData = ["provider": credential.provider]
+                    self.completeSigIn(id: user.uid, userData: userData)
                     
                 }
             }
@@ -87,7 +88,8 @@ class SignInVC: UIViewController {
             if error == nil {
                 print("Developer: Email user successfully authenticated with Firebase")
                 if let user = user {
-                    self.completeSigIn(id: user.uid)
+                    let userData = ["provider": user.providerID]
+                    self.completeSigIn(id: user.uid, userData: userData)
                     
                 }
 
@@ -100,7 +102,8 @@ class SignInVC: UIViewController {
                     } else {
                         print("Developer: Successfully authenticated with Firebase")
                         if let user = user {
-                            self.completeSigIn(id: user.uid)
+                            let userData = ["provider": user.providerID]
+                            self.completeSigIn(id: user.uid, userData: userData)
                             
                         }
 
@@ -113,7 +116,8 @@ class SignInVC: UIViewController {
         
     }
     
-    func completeSigIn(id: String){
+    func completeSigIn(id: String, userData: Dictionary<String, String>){
+        DataService.ds.createFirebaseDBUser(uid: id, userData: userData)
         let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
         print("Developer: Data saved to keychain \(keychainResult)" )
         performSegue(withIdentifier: "goToHome", sender: nil)
