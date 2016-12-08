@@ -19,6 +19,7 @@
 		3E0EA5E71DF296360093F0CF /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0EA5E61DF296360093F0CF /* FancyField.swift */; };
 		3E0EA5E91DF297960093F0CF /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0EA5E81DF297960093F0CF /* FancyButton.swift */; };
 		3E0EA5EC1DF2A7B00093F0CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0EA5EB1DF2A7B00093F0CF /* AppDelegate.m */; };
+		3E0EA5EF1DF905770093F0CF /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0EA5EE1DF905770093F0CF /* HomeVC.swift */; };
 		B02B44FA4312DB242BFF59CD /* Pods_social_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C575BE8573347D0A264FC3F3 /* Pods_social_test.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		3E0EA5EA1DF2A7B00093F0CF /* social-test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "social-test-Bridging-Header.h"; sourceTree = "<group>"; };
 		3E0EA5EB1DF2A7B00093F0CF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3E0EA5ED1DF2B1BC0093F0CF /* social-test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "social-test.entitlements"; sourceTree = "<group>"; };
+		3E0EA5EE1DF905770093F0CF /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		45C6D781B016FADE0BB6C194 /* Pods-social-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-social-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-social-test/Pods-social-test.debug.xcconfig"; sourceTree = "<group>"; };
 		8112B2A925136AD3C7C89DC1 /* Pods-social-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-social-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-social-test/Pods-social-test.release.xcconfig"; sourceTree = "<group>"; };
 		C575BE8573347D0A264FC3F3 /* Pods_social_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_social_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				3E0EA5CA1DF2455D0093F0CF /* SignInVC.swift */,
+				3E0EA5EE1DF905770093F0CF /* HomeVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				3E0EA5E71DF296360093F0CF /* FancyField.swift in Sources */,
 				3E0EA5CB1DF2455D0093F0CF /* SignInVC.swift in Sources */,
 				3E0EA5C91DF2455D0093F0CF /* AppDelegate.swift in Sources */,
+				3E0EA5EF1DF905770093F0CF /* HomeVC.swift in Sources */,
 				3E0EA5E91DF297960093F0CF /* FancyButton.swift in Sources */,
 				3E0EA5EC1DF2A7B00093F0CF /* AppDelegate.m in Sources */,
 				3E0EA5E01DF290B80093F0CF /* FancyView.swift in Sources */,
