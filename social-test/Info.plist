@@ -34,27 +34,27 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>CFBundleURLTypes</key>
-    <array>
-        <dict>
-            <key>CFBundleURLSchemes</key>
-            <array>
-                <string>fb349892145388025</string>
-            </array>
-        </dict>
-    </array>
-    <key>FacebookAppID</key>
-    <string>349892145388025</string>
-    <key>FacebookDisplayName</key>
-    <string>Connection Social</string>
-    <key>LSApplicationQueriesSchemes</key>
-    <array>
-        <string>fbapi</string>
-        <string>fb-messenger-api</string>
-        <string>fbauth2</string>
-        <string>fbshareextension</string>
-    </array>
-    <key>NSPhotoLibraryUsageDescription</key>
-    <string>The App need access to your photos to allow you to post photos and images from Facebook. </string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb349892145388025</string>
+			</array>
+		</dict>
+	</array>
+	<key>FacebookAppID</key>
+	<string>349892145388025</string>
+	<key>FacebookDisplayName</key>
+	<string>Connection Social</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+	</array>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Access to photos is required for posting photos and images.</string>
 </dict>
 </plist>
