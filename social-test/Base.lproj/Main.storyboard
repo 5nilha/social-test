@@ -197,7 +197,7 @@
                                         <subviews>
                                             <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo-camera" translatesAutoresizingMaskIntoConstraints="NO" id="GPg-LP-UYE" customClass="CircleView" customModule="social_test" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="54" height="54"/>
-                                                <color key="backgroundColor" red="0.67691826820373535" green="0.74731016159057617" blue="0.7760280966758728" alpha="0.92417594178082196" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.014327007345855236" green="0.60126835107803345" blue="0.55777841806411743" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="54" id="Cdg-eG-NBT"/>
