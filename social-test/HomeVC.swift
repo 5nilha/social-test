@@ -46,6 +46,7 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
                     }
                 }
             }
+            self.posts.reverse()
             self.tableView.reloadData()
         })
     }
@@ -103,7 +104,7 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
             return
         }
        
-        guard let img = imageAdd.image, imageSelected == true else {
+        guard let img = imageAdd.image, imageSelected == true || imageSelected == false else {
             print("DEVELOPER: An image must be selected")
             return
         }
