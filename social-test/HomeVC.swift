@@ -34,6 +34,8 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         
         //update the posts when the app run
         DataService.ds.REF_POSTS.observe(.value, with: { (snapshot) in
+            self.posts = []
+            
             if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
                 for snap in snapshot {
                     print("SNAP: \(snap)")
@@ -63,11 +65,10 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         
             if let img = HomeVC.imageCache.object(forKey: post.imageUrl as NSString){
                 cell.configureCell(post: post, img: img)
-                return cell
             } else{
                 cell.configureCell(post: post)
-                return cell
             }
+             return cell
         } else  {
             return PostCell()
         }
@@ -118,11 +119,33 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
                 } else {
                     print("DEVELOPER: Successfully uploaded image to Firebase storage")
                     let downloadURL = metadata?.downloadURL()?.absoluteString
+                    if let url = downloadURL{
+                        self.postToFirebase(imgUrl: url)
+                    }
                 }
             }
         }
     }
 
+    func postToFirebase(imgUrl: String) {
+        let post: Dictionary<String, AnyObject> = [
+        "caption": captionField.text! as AnyObject,
+        "imageUrl": imgUrl as AnyObject,
+        "likes": 0 as AnyObject
+        ]
+        let firebasePost = DataService.ds.REF_POSTS.childByAutoId()
+        firebasePost.setValue(post)
+        
+        //clear the post field
+        captionField.text = ""
+        imageSelected = false
+        imageAdd.image = UIImage(named: "photo-camera")
+        
+        tableView.reloadData()
+        
+    }
+    
+    
     @IBAction func signOutTapped(_ sender: Any) {
        let keychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
         print("Developer: ID removed from keychain \(keychainResult)")
