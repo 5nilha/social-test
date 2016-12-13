@@ -25,6 +25,7 @@
 		3E0EA5F51DF956AC0093F0CF /* PostButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0EA5F41DF956AC0093F0CF /* PostButton.swift */; };
 		3E0EA5F81DFA0D370093F0CF /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0EA5F71DFA0D370093F0CF /* DataService.swift */; };
 		3E0EA5FA1DFA22410093F0CF /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0EA5F91DFA22410093F0CF /* Post.swift */; };
+		3E3A58CB1DFC055E00772266 /* pictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A58CA1DFC055E00772266 /* pictureView.swift */; };
 		B02B44FA4312DB242BFF59CD /* Pods_social_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C575BE8573347D0A264FC3F3 /* Pods_social_test.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		3E0EA5F41DF956AC0093F0CF /* PostButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostButton.swift; sourceTree = "<group>"; };
 		3E0EA5F71DFA0D370093F0CF /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		3E0EA5F91DFA22410093F0CF /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		3E3A58CA1DFC055E00772266 /* pictureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pictureView.swift; sourceTree = "<group>"; };
 		45C6D781B016FADE0BB6C194 /* Pods-social-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-social-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-social-test/Pods-social-test.debug.xcconfig"; sourceTree = "<group>"; };
 		8112B2A925136AD3C7C89DC1 /* Pods-social-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-social-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-social-test/Pods-social-test.release.xcconfig"; sourceTree = "<group>"; };
 		C575BE8573347D0A264FC3F3 /* Pods_social_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_social_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,6 +136,7 @@
 				3E0EA5F01DF92CB10093F0CF /* CircleView.swift */,
 				3E0EA5F21DF94BF10093F0CF /* PostCell.swift */,
 				3E0EA5F41DF956AC0093F0CF /* PostButton.swift */,
+				3E3A58CA1DFC055E00772266 /* pictureView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -211,6 +214,9 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Push = {
 								enabled = 1;
 							};
 						};
@@ -312,6 +318,7 @@
 				3E0EA5E91DF297960093F0CF /* FancyButton.swift in Sources */,
 				3E0EA5EC1DF2A7B00093F0CF /* AppDelegate.m in Sources */,
 				3E0EA5F11DF92CB10093F0CF /* CircleView.swift in Sources */,
+				3E3A58CB1DFC055E00772266 /* pictureView.swift in Sources */,
 				3E0EA5E01DF290B80093F0CF /* FancyView.swift in Sources */,
 				3E0EA5F31DF94BF10093F0CF /* PostCell.swift in Sources */,
 				3E0EA5E51DF293DD0093F0CF /* RoundButtons.swift in Sources */,

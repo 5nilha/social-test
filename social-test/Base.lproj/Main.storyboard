@@ -162,7 +162,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PPD-pk-Z6O">
-                                        <rect key="frame" x="140.5" y="26.5" width="95" height="30.5"/>
+                                        <rect key="frame" x="140" y="26.5" width="95" height="30.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBt-26-ie3">
                                                 <rect key="frame" x="0.0" y="0.0" width="95" height="30.5"/>
@@ -254,7 +254,7 @@
                                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="vwn-Te-zgd"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N2D-0K-egE">
+                                                        <imageView clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N2D-0K-egE">
                                                             <rect key="frame" x="250" y="44" width="117" height="120"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="120" id="P31-wK-H7E"/>
@@ -293,7 +293,7 @@
                                                     </constraints>
                                                 </view>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.96537131071090698" green="0.95963138341903687" blue="0.9697832465171814" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="to9-Yp-t1D" firstAttribute="leading" secondItem="2Hw-PA-gVj" secondAttribute="leading" id="9QM-SW-HWz"/>
                                                 <constraint firstAttribute="bottom" secondItem="to9-Yp-t1D" secondAttribute="bottom" id="PYk-ja-3iQ"/>
@@ -324,7 +324,7 @@
                                         <state key="normal" image="Fill 135"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFn-Wg-h8T" customClass="RoundButtons" customModule="social_test" customModuleProvider="target">
-                                        <rect key="frame" x="317" y="15" width="50" height="43"/>
+                                        <rect key="frame" x="310" y="15" width="50" height="43"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="43" id="1sJ-dr-uhs"/>
                                             <constraint firstAttribute="width" constant="50" id="aCt-JI-gds"/>
@@ -337,7 +337,7 @@
                                     <constraint firstAttribute="height" constant="72" id="Uo8-cR-l4k"/>
                                     <constraint firstAttribute="bottom" secondItem="pFn-Wg-h8T" secondAttribute="bottom" constant="14" id="V5k-zX-08s"/>
                                     <constraint firstAttribute="bottom" secondItem="X2Z-eU-wj2" secondAttribute="bottom" constant="14" id="dTJ-tI-BOq"/>
-                                    <constraint firstAttribute="trailing" secondItem="pFn-Wg-h8T" secondAttribute="trailing" constant="8" id="h5u-eF-MXd"/>
+                                    <constraint firstAttribute="trailing" secondItem="pFn-Wg-h8T" secondAttribute="trailing" constant="15" id="h5u-eF-MXd"/>
                                     <constraint firstItem="X2Z-eU-wj2" firstAttribute="leading" secondItem="g55-9P-oqy" secondAttribute="leading" constant="15" id="h9a-Pb-m5e"/>
                                 </constraints>
                             </view>
@@ -346,7 +346,7 @@
                                 <subviews>
                                     <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo-camera" translatesAutoresizingMaskIntoConstraints="NO" id="GPg-LP-UYE" customClass="CircleView" customModule="social_test" customModuleProvider="target">
                                         <rect key="frame" x="8" y="4" width="54" height="54"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.99047333002090454" green="0.66025882959365845" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="54" id="Cdg-eG-NBT"/>
@@ -445,7 +445,7 @@
         <image name="Logo" width="326" height="66"/>
         <image name="empty-Like-Heart" width="64" height="64"/>
         <image name="f" width="54" height="112"/>
-        <image name="more" width="50" height="41"/>
+        <image name="more" width="48" height="42"/>
         <image name="photo-camera" width="64" height="64"/>
         <image name="post-it-2" width="34" height="31"/>
     </resources>

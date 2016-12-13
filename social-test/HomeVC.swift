@@ -8,6 +8,9 @@
 
 import UIKit
 import Firebase
+import FirebaseInstanceID
+import FirebaseMessaging
+
 import SwiftKeychainWrapper
 
 class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -24,6 +27,8 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        FIRMessaging.messaging().subscribe(toTopic: "/topics/news")
         
         tableView.delegate = self
         tableView.dataSource = self
